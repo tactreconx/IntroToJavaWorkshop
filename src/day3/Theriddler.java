@@ -2,18 +2,20 @@ package day3;
 
 import javax.swing.JOptionPane;
 
-public class Theriddler {
-
+public class TheRiddler {
 	public static void main(String[] args) {
-		int score=0;
-		String Rule =JOptionPane.showInputDialog("What room can no one enter?");
-		if (Rule.equals("A Mushroom."))
-		{
-	
-			JOptionPane.showInputDialog("Your Right!");
-			if (Rule.equals(I do not know))
+		int score = 0;
+		String Rule = JOptionPane.showInputDialog("What room can no one enter?");
+		if (Rule.equals("A Mushroom")) {
+
+			JOptionPane.showMessageDialog(null, "Your Right!");
+			score++;
+
+		} else {
+			JOptionPane.showMessageDialog(null, "You are incorrect. The correct answer is a Mushroom.");
 		}
 		
+		}
 		// 1. Make a variable to hold the score
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
@@ -25,10 +27,5 @@ public class Theriddler {
 		// 6. Add some more riddles
 
 		// 2. Make a pop up to show the score.
-		
-			
-
-
-
-
-
+	
+	}
